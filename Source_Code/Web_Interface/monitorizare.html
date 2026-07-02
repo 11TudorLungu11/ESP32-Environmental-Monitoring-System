@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitorizare live</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body class="page-body">
+
+    <div id="loader">
+    <h1>Ambient AI System</h1>
+    <p>Initializing ambient monitoring system...</p>
+    <div class="loading-bar">
+        <div class="loading-fill"></div>
+    </div>
+</div>
+
+    <a href="index.html" class="back-btn">Înapoi</a>
+
+    <div id="espStatus" class="esp-box esp-off">🔴 ESP32 Offline</div>
+
+    <div class="top-info">
+        <span id="liveClock">--:--:--</span>
+        <span>📍 Bucharest</span>
+        <span id="weatherInfo">🌡️ Exterior: --°C</span>
+    </div>
+
+    <section id="monitorizare" class="section dark">
+        <h2>Monitorizare live</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🌡️ Temperatură</h3>
+                <p id="tempValue">--°C</p>
+            </div>
+
+            <div class="card">
+                <h3>💧 Umiditate</h3>
+                <p id="humidityValue">--%</p>
+            </div>
+
+            <div class="card">
+                <h3>💡 Lumină</h3>
+                <p id="lightValue">-- lux</p>
+            </div>
+
+            <div class="card">
+                <h3>🧠 Stare ambientală</h3>
+                <p id="stateValue">--</p>
+            </div>
+        </div>
+
+        <div class="music-box">
+            <h3>Melodie recomandată</h3>
+            <p id="songValue">--</p>
+
+            <audio id="audioPlayer"></audio>
+
+            <div class="visualizer paused">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="ai-box">
+                <h3>AI Analysis</h3>
+                <p id="aiStatus">Sistemul așteaptă datele de la senzori...</p>
+            </div>
+
+            <div class="music-buttons">
+                <button id="playBtn">Start melodie</button>
+                <button id="stopBtn">Stop melodie</button>
+                <button id="nextBtn">Next melodie</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

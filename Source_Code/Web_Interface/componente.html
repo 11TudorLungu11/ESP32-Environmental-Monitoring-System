@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente utilizate</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body class="page-body">
+
+    <div class="top-bar">
+    <span id="liveClock" class="clock-only">00:00:00</span>
+</div>
+
+    <div id="loader">
+    <h1>Ambient AI System</h1>
+    <p>Initializing ambient monitoring system...</p>
+    <div class="loading-bar">
+        <div class="loading-fill"></div>
+    </div>
+</div>
+
+    <a class="back-btn" href="index.html">Înapoi</a>
+
+    <section class="page-section light-section">
+        <h2>Componente utilizate</h2>
+
+        <div class="component-list">
+            <div>🧠 ESP32 - microcontroler principal pentru citirea senzorilor și comunicarea Wi-Fi</div>
+            <div>🌡️ DHT11 / DHT22 - senzor pentru temperatură și umiditate</div>
+            <div>💡 BH1750 - senzor digital pentru măsurarea nivelului de lumină</div>
+            <div>🖥️ LCD 1602 I2C - afișarea mesajelor și a stării sistemului</div>
+            <div>🎵 DFPlayer Mini - modul audio pentru redarea melodiilor</div>
+            <div>🔊 Difuzor - redarea sunetului recomandat de sistem</div>
+            <div>🔘 Buton - declanșarea citirii senzorilor / pornirea procesului</div>
+            <div>💡 LED-uri - indicatoare vizuale pentru starea sistemului</div>
+            <div>🔌 Fire jumper și breadboard - realizarea conexiunilor hardware</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
